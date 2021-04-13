@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Japan Survey</h1>
+  <p id="description">Please fill the form, thank you.</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">
+      Name
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </label>
+
+    <label for="email" id="email-label">
+      Email
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </label>
+
+    <label for="number" id="number-label">
+      Age
+      <input type="number" id="number" 
+      placeholder="How old are you?" 
+      min="15" 
+      max="40">
+    </label>
+
+    <label for="dropdown" id="dropdown-label">
+        How do you think about Japan?
+        <select id="dropdown">
+          <option>Very Enthusiastic</option>
+          <option>My Dream</option>
+          <option>Ordinary</option>
+          <option>I never thought about it</option>
+        </select>
+    </label>
+
+    <label for="choose" id="choose-label">
+      Which city do you want to go to when you come to Japan?
+    </label>
+    <input type="radio" name="choose" value="1" checked> Tokyo <br>
+    <input type="radio" name="choose" value="2" > Yokohama <br>
+    <input type="radio" name="choose" value="3"> Osaka <br>
+    <input type="radio" name="choose" value="4"> Kyoto <br>
+    <input type="radio" name="choose" value="5"> Nagasaki <br>
+    <input type="radio" name="choose" value="6"> Kobe <br>
+    <input type="radio" name="choose" value="7"> Ishigaki <br>
+    <input type="radio" name="choose" value="8"> Hakodate <br>
+    <input type="radio" name="choose" value="9"> Sapporo <br>
+    <input type="radio" name="choose" value="10"> Kagoshima <br>
+
+
+    <br> <br>
+    <label for="destination" id="destination-label">
+      The most destination you want when you go to Japan.
+    </label>
+    <input type="checkbox" name="destination" value="1"> Tokyo Disneyland <br>
+    <input type="checkbox" name="destination" value="2"> Tokyo Disneysea <br>
+    <input type="checkbox" name="destination" value="3"> Hiroshima Peace Memorial <br>
+    <input type="checkbox" name="destination" value="4"> Fujiko Fujio Museum <br>
+    <input type="checkbox" name="destination" value="5"> Yokohama Raumen Museum <br>
+    <input type="checkbox" name="destination" value="6"> Zoorasia <br>
+    <input type="checkbox" name="destination" value="7"> Okinawa Churaumi Aquarium <br>
+    <input type="checkbox" name="destination" value="8"> Golden Pavilion <br>
+    <input type="checkbox" name="destination" value="9"> jigokudani Monkey Park <br>
+    <input type="checkbox" name="destination" value="10"> Gunung Fuji <br>
+
+    <br> <br>
+    <label for="comments" id="comments-label">
+      Any comments or suggestions?
+      <textarea id="comments" cols="30" rows="10"></textarea>
+    </label>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
